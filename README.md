@@ -91,6 +91,21 @@ The `dataset/` folder contains example volume data used by the scripts. The raw 
 
 The training and inference outputs are saved under the result directory specified in the scripts. Please check the corresponding output folders after running training or inference.
 
-## Notes
+## Environment
 
-This repository provides the implementation used for our experiments. More details about the experimental environment and dependencies will be added later.
+The experiments were conducted on a Linux workstation with an NVIDIA GeForce RTX 4090 GPU.
+
+Main environment:
+
+- Python 3.8.19
+- PyTorch 2.1.2 + CUDA 12.1
+- NVIDIA Driver 550.100
+- GPU: NVIDIA GeForce RTX 4090, 24 GB memory
+- NumPy 1.24.4
+- SciPy 1.10.1
+- scikit-image 0.21.0
+- Matplotlib 3.7.5
+- tqdm 4.66.4
+- tiny-cuda-nn
+
+The code may also run under other compatible CUDA/PyTorch environments.
