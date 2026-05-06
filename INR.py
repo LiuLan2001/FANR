@@ -72,7 +72,7 @@ p.add_argument('--batch_size', type=int, default=8000)
 p.add_argument('--lr', type=float, default=5e-5, help='learning rate. default=1e-4')
 p.add_argument('--num_epochs', type=int, default=200, help='Number of epochs to train for.')
 p.add_argument('--checkpoint', type=int, default=50, help='checkpoint is saved.')
-p.add_argument('--result_dir',type=str,default='./FINR/result/',metavar='N',help='the path where we stored the synthesized data')
+p.add_argument('--result_dir',type=str,default='./FANR/result/',metavar='N',help='the path where we stored the synthesized data')
 p.add_argument('--temporal', type=int, default=0, metavar='N')
 p.add_argument('--lr_s', type=str, default='cosine', help='learning rate scheduler')
 
