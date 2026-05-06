@@ -188,7 +188,7 @@ def trainNet(model, args, dataset):
 
 @torch.no_grad()
 def inf(model, dataset, args, result_dir=None):
-    ckpt = './FINR/result/' + args.dataset + args.ckpt + '-' + str(args.spatial) + '-' + str(args.temporal) + '-' + str(args.num_epochs) + '.pth'
+    ckpt = './FANR/result/' + args.dataset + args.ckpt + '-' + str(args.spatial) + '-' + str(args.temporal) + '-' + str(args.num_epochs) + '.pth'
     result_dir = os.path.dirname(os.path.dirname(ckpt)) if result_dir is None else result_dir
     outputs_dir = os.path.join(result_dir, 'outputs', str(args.spatial) + '-' + str(args.temporal))
     os.makedirs(outputs_dir, exist_ok=True)
